@@ -17,27 +17,37 @@
         }
 
         header {
-            background-color: white; /* Set the background to white */
+            background-color: lavender; /* Set the background to lavender */
             color: #333;
             text-align: center;
             padding: 1em;
         }
 
         nav {
-            background-color: lavender; /* Set the background to lavender */
-            color: white;
-            padding: 1em;
+            background-color: white; /* Set the background to white */
             text-align: center;
+            margin: 0;
+            padding: 1em;
         }
 
         nav a {
-            color: white; /* Set the font color to white */
+            color: #888; /* Light grey font color */
             text-decoration: none;
-            padding: 0.5em 1em;
-            margin: 0 1em;
-            display: inline-block;
             font-family: 'Gotham', sans-serif; /* Set the font to Gotham */
-            font-size: 1.5em; /* Set the font size to 1.5 times bigger */
+            font-size: 1.2em; /* Set the font size */
+            margin: 0 1em; /* Set margin between tabs */
+            transition: color 0.3s; /* Add transition for smooth color change */
+        }
+
+        nav a:hover {
+            color: black; /* Change font color to black on hover */
+        }
+
+        .name-links a {
+            color: #333; /* Dark grey font color for name */
+            text-decoration: none;
+            font-family: 'Comic Sans MS', cursive; /* Set the font to Comic Sans */
+            font-size: 18px; /* Set the font size to 18 pixels */
         }
     </style>
 </head>
@@ -45,7 +55,7 @@
 <body>
 
     <header>
-        <h1 style="font-family: 'Gotham', sans-serif; font-size: 1.5em;">Pragati Kore</h1>
+        <h1 style="font-family: 'Comic Sans MS', cursive; font-size: 18px;">Pragati Kore</h1>
     </header>
 
     <nav>
