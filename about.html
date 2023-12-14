@@ -13,7 +13,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #add8e6 50%, white 50%); /* Light baby blue and white half-and-half background */
+            background: linear-gradient(to right, #f8f8f8 50%, white 50%); /* Off-white and white half-and-half background */
         }
 
         header {
@@ -31,18 +31,23 @@
         }
 
         nav a {
-            color: #666; /* Lighter grey font color */
+            color: #888; /* Light grey font color */
             text-decoration: none;
             font-family: 'Gotham', sans-serif; /* Set the font to Gotham */
-            font-size: 1.2em; /* Set the font size to 20% smaller */
-            margin: 0 1em; /* Set margin between tabs */
+            font-size: 1.2em; /* Set the font size */
+            margin: 0 2.25em; /* Adjust margin between tabs (1.5 times the original) */
+            transition: color 0.3s; /* Add transition for smooth color change */
+        }
+
+        nav a:hover {
+            color: black; /* Change font color to black on hover */
         }
 
         .name-links a {
-            color: #666; /* Lighter grey font color */
+            color: #333; /* Dark grey font color for name */
             text-decoration: none;
-            font-family: 'Comic Sans MS', cursive; /* Set the font to Comic Sans */
-            font-size: 18px; /* Set the font size to 18 pixels */
+            font-family: 'Corbel', sans-serif; /* Set the font to Corbel */
+            font-size: 38px; /* Set the font size to 38 pixels */
         }
 
         main {
@@ -62,7 +67,7 @@
 <body>
 
     <header>
-        <h1 style="font-family: 'Comic Sans MS', cursive; font-size: 18px;">Pragati Kore</h1>
+        <h1 style="font-family: 'Corbel', sans-serif; font-size: 38px;">Pragati Kore</h1>
     </header>
 
     <nav>
