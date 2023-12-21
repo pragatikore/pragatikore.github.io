@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pragati Kore</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Merriweather+Sans:wght@400&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-He6XVrLs5Ne9Q6t9bQmgVDpgjcc6PdNxX7d+d9u7u5NOn/yuM9+qktb3ZlStvWMOBd7Zy4s1lpM/8rX5TST+5A==" crossorigin="anonymous" />
     <style>
         /* Updated CSS styles for the About page */
         body {
@@ -75,6 +76,22 @@
             max-width: 100%; /* Ensure the image does not exceed its container width */
             height: auto;
         }
+
+        .about-icons {
+            text-align: center;
+            margin-top: 20px; /* Add some space between the image and icons */
+        }
+
+        .about-icons a {
+            margin-right: 20px; /* Add space between the icons */
+            font-size: 24px; /* Adjust the icon size */
+            color: #333; /* Set icon color */
+            transition: color 0.3s; /* Add transition for smooth color change */
+        }
+
+        .about-icons a:hover {
+            color: black; /* Change icon color to black on hover */
+        }
     </style>
 </head>
 
@@ -101,6 +118,18 @@
 
         <div class="about-image">
             <img src="https://raw.githubusercontent.com/pragatikore/pragatikore.github.io/main/ppic.jpg" alt="Pragati Kore's Photo">
+        </div>
+
+        <div class="about-icons">
+            <a href="mailto:pragati98@gmail.com" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pragati-kore/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/prags_kore" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
         </div>
     </main>
 
