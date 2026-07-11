@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research &middot; Pragati Kore</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23FBF6EE'/><rect x='8' y='20' width='48' height='8' rx='4' fill='%23C9C9C4'/><rect x='8' y='32' width='34' height='8' rx='4' fill='%230E7C7B'/><rect x='8' y='44' width='24' height='8' rx='4' fill='%23DDDDD8'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Pragati Kore <span class="tag">Genetics &amp; Genomics</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="outreach.html">Outreach</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap">
+    <p class="eyebrow">Research</p>
+    <h1>Making reference genomes<br>look more like everyone.</h1>
+    <p class="lede">Most population-genetic tools were built and tuned on a narrow slice of ancestries. I work on closing that gap &mdash; using local ancestry inference and rare-variant methods to make genomic resources like gnomAD more accurate for people with admixed backgrounds.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Dissertation</h2>
+    <p class="lede" style="margin-bottom:1.6em;">Advancing genomic equity through local ancestry inference, advised by Dr. Elizabeth Atkinson, Dept. of Molecular and Human Genetics, BCM (Jan 2023 &ndash; anticipated Dec 2026). Two complementary threads: a public resource that makes reference allele frequencies ancestry-aware, and a method that carries the same idea into rare-variant discovery.</p>
+
+    <div class="grid" style="grid-template-columns: 1fr; gap:16px;">
+      <div class="card">
+        <span class="label">Part 1 &middot; with the Broad Institute of MIT &amp; Harvard</span>
+        <h3>Improved allele frequencies in gnomAD through local ancestry inference</h3>
+        <p>Introduced local ancestry&ndash;informed allele frequencies into gnomAD for its two most admixed groups &mdash; Admixed American (~7,600 individuals) and African/African American (~20,000) &mdash; the first time local ancestry has been systematically built into a globally representative genomic resource. The payoff is sharper, ancestry-resolved frequency estimates: roughly 80% of variants show at least a two-fold difference between ancestral backgrounds, which directly changes how disease-risk variants are interpreted in people with admixed ancestry. Presented as invited talks at BCM, UCLA, the Broad Institute, and Cassyni Research Seminars.</p>
+        <a class="btn btn-outline" style="margin-top:6px; margin-right:8px;" href="https://www.nature.com/articles/s41467-025-63340-2" target="_blank" rel="noopener">Read on Nature.com &rarr;</a>
+        <a class="btn btn-outline" style="margin-top:6px;" href="https://github.com/broadinstitute/gnomad_local_ancestry" target="_blank" rel="noopener">Code on GitHub &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="label">Part 2 &middot; Tractor-Burden</span>
+        <h3>Improving rare variant discovery in admixed populations</h3>
+        <p>Built Tractor-Burden, an ancestry-aware rare-variant burden testing framework for admixed populations. Most burden tests assume a single, homogeneous ancestry, which loses power in admixed genomes where variant frequencies and effects differ across ancestral tracts. By aggregating ancestry-specific rare-variant dosages within user-defined regions and running ancestry-specific burden tests, it improves detection of risk genes whose burden is concentrated in one ancestry; in simulations, modeling these ancestry-specific effects increases discovery power. Released as open-source Python with a step-by-step tutorial.</p>
+        <a class="btn btn-outline" style="margin-top:6px;" href="https://github.com/Atkinson-Lab/Tractor-Burden" target="_blank" rel="noopener">Tractor-Burden on GitHub &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="label">CTR-CAQ Capstone &middot; with Dr. Seema Lalani &amp; Dr. Christina Miyake</span>
+        <h3>Risk stratification in Wolff-Parkinson-White syndrome</h3>
+        <p>Built a polygenic risk score (PRS) for atrial fibrillation to risk-stratify patients with Wolff-Parkinson-White (WPW) syndrome &mdash; a conduction disorder that predisposes to life-threatening arrhythmias, though its genetic link to AF is still unknown. Constructed, optimized, and applied an AF PRS from GWAS summary statistics to whole-exome sequencing from a 305-patient WPW cohort, and found a significant association between AF genetic risk and WPW that separated patients from 1000 Genomes controls. The result points toward using genetic predisposition to guide monitoring, tailored treatment, and prevention &mdash; a step toward precision cardiology.</p>
+      </div>
+    </div>
+
+    <div class="band-stack" style="margin-top:50px;" aria-hidden="true">
+      <div class="ancestry-track" style="--track-h:14px;">
+        <span style="width:20%; background:var(--teal);"></span>
+        <span style="width:30%; background:var(--gold);"></span>
+        <span style="width:14%; background:var(--coral);"></span>
+        <span style="width:18%; background:var(--sky);"></span>
+        <span style="width:18%; background:var(--plum);"></span>
+      </div>
+    </div>
+
+    <h2>Publications</h2>
+    <div class="grid" style="grid-template-columns: 1fr; gap:16px;">
+      <div class="card">
+        <span class="label">Preprint &middot; bioRxiv &middot; 2026</span>
+        <h3>[ Preprint title &mdash; add once it&rsquo;s live ]</h3>
+        <p>Kore, P., et&nbsp;al. Preprint, bioRxiv.</p>
+        <p class="placeholder-note">Placeholder: once the DOI is public (any day now), replace the title and point the button below at your bioRxiv link. Send me the details and I&rsquo;ll drop them in exactly.</p>
+        <a class="btn btn-outline" style="margin-top:6px;" href="#" target="_blank" rel="noopener">View on bioRxiv &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="label">Nature Communications &middot; 2025</span>
+        <h3>Improved allele frequencies in gnomAD through local ancestry inference</h3>
+        <p>Kore, P.*, Wilson, M.W.*, Tiao, G., et&nbsp;al. <em>Nature Communications</em> 16, 8734.</p>
+        <a class="btn btn-outline" style="margin-top:6px;" href="https://doi.org/10.1038/s41467-025-63340-2" target="_blank" rel="noopener">View DOI &rarr;</a>
+      </div>
+      <div class="card">
+        <span class="label">Cancer Epidemiology, Biomarkers &amp; Prevention &middot; 2026</span>
+        <h3>Interplay between Genetic Ancestry, Self-reported Race and Ethnicity, and Clinical Factors in Pediatric Acute Lymphoblastic Leukemia: A REDIAL Consortium Report</h3>
+        <p>Kore, P.*, Geris, J.M.*, Leon-Camarena, M., et&nbsp;al.</p>
+        <a class="btn btn-outline" style="margin-top:6px;" href="https://doi.org/10.1158/1055-9965.EPI-25-1438" target="_blank" rel="noopener">View DOI &rarr;</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <span class="label">More publications</span>
+      <ul class="log" style="margin:6px 0 0;">
+        <li class="log-entry">
+          <span class="log-date">Laryngoscope<br>2024</span>
+          <div class="log-body"><h3 style="font-size:1rem;">High-Resolution Profiling of Human Vocal Fold Cellular Landscapes With Single-Nuclei RNA Sequencing</h3><p>Laitman, Charytonowicz, Zhu, et&nbsp;al., <em>incl. Kore</em>.</p></div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">J. Endocrine<br>Society, 2021</span>
+          <div class="log-body"><h3 style="font-size:1rem;">EDCs Reorganize Brain-Behavior Phenotypic Relationships in Rats</h3><p>Hernandez Scudder, Young, Thompson, et&nbsp;al., <em>incl. Kore</em>.</p></div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">G3 Genes|Genomes|<br>Genetics, 2020</span>
+          <div class="log-body"><h3 style="font-size:1rem;">APP-Induced Patterned Neurodegeneration Is Exacerbated by APOE4 in C. elegans</h3><p>Sae-Lee, Scott, Brose, et&nbsp;al., <em>incl. Kore</em>.</p></div>
+        </li>
+        <li class="log-entry">
+          <span class="log-date">Submitted<br>2024</span>
+          <div class="log-body"><h3 style="font-size:1rem;">Landscape Genetic Variation Enhances Plant Reproductive Resilience to Climate Extremes</h3><p>O&rsquo;Connell, Castilla, Espinosa, et&nbsp;al., <em>incl. Kore</em>. Manuscript submitted.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:2em;">Lab rotations</h2>
+    <div class="card">
+      <ul class="log" style="margin:0;">
+        <li class="log-entry"><span class="log-date">Mar&ndash;May 2023</span><div class="log-body"><h3 style="font-size:1rem;">Lupo Lab</h3><p>Genetic ancestry vs. acute lymphoblastic leukemia subtypes, using ADMIXTURE &mdash; led to the REDIAL Consortium publication above.</p></div></li>
+        <li class="log-entry"><span class="log-date">Oct&ndash;Dec 2022</span><div class="log-body"><h3 style="font-size:1rem;">Cheng Lab</h3><p>Optimizing automatic spatial annotation of adenocarcinoma samples from voxel-expression data.</p></div></li>
+        <li class="log-entry"><span class="log-date">Aug&ndash;Oct 2022</span><div class="log-body"><h3 style="font-size:1rem;">Tran Lab</h3><p>CRISPR-based SARM1 deletion strategies to protect retinal ganglion cells from Wallerian degeneration.</p></div></li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:2em;">Research interests</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="swatch" style="background:var(--coral);"></span>
+        <h3>Rare variants</h3>
+        <p>Methods for finding and interpreting rare genetic variation, where sample size and ancestry composition matter most.</p>
+      </div>
+      <div class="card">
+        <span class="swatch" style="background:var(--sky);"></span>
+        <h3>Local ancestry inference</h3>
+        <p>Segmenting genomes by ancestral origin to improve frequency and association estimates in admixed individuals.</p>
+      </div>
+      <div class="card">
+        <span class="swatch" style="background:var(--gold);"></span>
+        <h3>Health equity in genomics</h3>
+        <p>Making sure the databases clinicians rely on actually reflect the diversity of the patients they&rsquo;re used for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="divider-band ancestry-track" aria-hidden="true">
+      <span style="width:18%; background:var(--gold);"></span>
+      <span style="width:22%; background:var(--coral);"></span>
+      <span style="width:16%; background:var(--teal);"></span>
+      <span style="width:24%; background:var(--sky);"></span>
+      <span style="width:20%; background:var(--plum);"></span>
+    </div>
+    <div class="foot-grid">
+      <p class="copy">&copy; <span id="year"></span> Pragati Kore &middot; Houston, TX</p>
+      <ul class="foot-links">
+        <li><a href="cv.pdf" download>CV</a></li>
+        <li><a href="mailto:pragati.kore@bcm.edu">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=nDwn6ZsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/pragati-kore/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/pragatikore" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

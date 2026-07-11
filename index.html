@@ -1,85 +1,128 @@
-<!-- index.html (Main Page) -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pragati Kore</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap">
-    <style>
-        /* Updated CSS styles */
-        body {
-            font-family: 'Rubik', sans-serif; /* Set the font to Rubik */
-            margin: 0;
-            padding: 0;
-            background-color: white; /* Set the background to white */
-        }
-
-        header {
-            background-color: #f8f8f8; /* Off-white color */
-            color: #333;
-            text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            background-color: white; /* Set the background to white */
-            text-align: center;
-            margin: 0;
-            padding: 1em;
-        }
-
-        nav a {
-            color: #888; /* Light grey font color */
-            text-decoration: none;
-            font-family: 'Rubik', sans-serif; /* Set the font to Rubik */
-            font-size: 1.2em; /* Set the font size */
-            margin: 0 2.25em; /* Adjust margin between tabs (1.5 times the original) */
-            transition: color 0.3s; /* Add transition for smooth color change */
-            text-transform: lowercase; /* Convert to lowercase */
-        }
-
-        nav a:hover {
-            color: black; /* Change font color to black on hover */
-        }
-
-        .name-links a {
-            color: #333; /* Dark grey font color for name */
-            text-decoration: none;
-            font-family: 'Rubik', sans-serif; /* Set the font to Rubik */
-            font-size: 38px; /* Set the font size to 38 pixels */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pragati Kore</title>
+<meta name="description" content="Pragati Kore — Ph.D. Candidate in Genetics & Genomics at Baylor College of Medicine. Research, outreach, food, and travel.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23FBF6EE'/><rect x='8' y='20' width='48' height='8' rx='4' fill='%23C9C9C4'/><rect x='8' y='32' width='34' height='8' rx='4' fill='%230E7C7B'/><rect x='8' y='44' width='24' height='8' rx='4' fill='%23DDDDD8'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1 style="font-size: 38px;">Pragati Kore</h1>
-    </header>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Pragati Kore <span class="tag">Genetics &amp; Genomics</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="outreach.html">Outreach</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <nav>
-        <a href="index.html">home</a>
-        <a href="about.html">about me</a>
-        <a href="research.html">research</a>
-        <a href="outreach.html">outreach</a>
-        <a href="food.html">food</a>
-        <a href="travel.html">travel</a>
-    </nav>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Ph.D. Candidate &middot; Molecular &amp; Human Genetics &middot; Baylor College of Medicine &middot; Houston, TX</p>
+    <p class="availability"><span class="dot" aria-hidden="true"></span><span>Graduating Dec 2026 &mdash; <strong>open to roles in computational &amp; statistical genomics</strong></span></p>
+    <h1>Hi, I&rsquo;m Pragati &mdash;<br>I study the parts of the genome<br>that don&rsquo;t fit in one box.</h1>
+    <p class="lede">I work on rare variants and admixed populations, trying to make genomic reference data reflect people whose ancestry doesn&rsquo;t sort neatly into a single group. Outside the lab, that shows up as mentoring, volunteering, and saying yes to most conferences that will have me.</p>
 
-    <main>
-        <!-- Removed the "This is a basic template..." text -->
-        <div class="off-white-background">
-            <!-- Content for the main section can be added here -->
+    <div class="actions">
+      <a class="btn btn-solid" href="cv.pdf" download>Download CV</a>
+      <a class="btn btn-outline" href="research.html">See my research &rarr;</a>
+      <a class="btn btn-outline" href="about.html">More about me</a>
+    </div>
+
+    <div class="band-stack" aria-hidden="true">
+      <div class="ancestry-track" style="--track-h:16px;">
+        <span style="width:22%; background:var(--coral);"></span>
+        <span style="width:14%; background:var(--teal);"></span>
+        <span style="width:9%;  background:var(--gold);"></span>
+        <span style="width:20%; background:var(--plum);"></span>
+        <span style="width:12%; background:var(--sky);"></span>
+        <span style="width:15%; background:var(--coral);"></span>
+        <span style="width:8%;  background:var(--teal);"></span>
+      </div>
+      <div class="ancestry-track" style="--track-h:16px;">
+        <span style="width:18%; background:var(--sky);"></span>
+        <span style="width:26%; background:var(--gold);"></span>
+        <span style="width:10%; background:var(--coral);"></span>
+        <span style="width:16%; background:var(--teal);"></span>
+        <span style="width:14%; background:var(--plum);"></span>
+        <span style="width:16%; background:var(--sky);"></span>
+      </div>
+      <div class="ancestry-track" style="--track-h:16px;">
+        <span style="width:30%; background:var(--plum);"></span>
+        <span style="width:20%; background:var(--coral);"></span>
+        <span style="width:22%; background:var(--sky);"></span>
+        <span style="width:28%; background:var(--gold);"></span>
+      </div>
+    </div>
+    <p class="stamp">Each bar reads like a local-ancestry track &mdash; segments along a chromosome, with the highlighted blocks marking a population.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="grid grid-3">
+      <a class="card-link" href="research.html">
+        <div class="card">
+          <span class="swatch" style="background:var(--coral);"></span>
+          <span class="label">Research</span>
+          <h3>Ancestry-aware genomics</h3>
+          <p>Rare variants, local ancestry inference, and building reference data that works for admixed populations.</p>
         </div>
-    </main>
+      </a>
+      <a class="card-link" href="outreach.html">
+        <div class="card">
+          <span class="swatch" style="background:var(--teal);"></span>
+          <span class="label">Outreach</span>
+          <h3>Getting more people in the room</h3>
+          <p>Mentoring, teaching, and community work aimed at widening who gets to do &mdash; and benefit from &mdash; genomics.</p>
+        </div>
+      </a>
+      <a class="card-link" href="experiences.html">
+        <div class="card">
+          <span class="swatch" style="background:var(--gold);"></span>
+          <span class="label">Experiences</span>
+          <h3>Talks, posters &amp; workshops</h3>
+          <p>A running log of conferences, invited talks, workshops, and the awards along the way.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <!-- Removed the copyright notice -->
-    </footer>
+<footer>
+  <div class="wrap">
+    <div class="divider-band ancestry-track" aria-hidden="true">
+      <span style="width:20%; background:var(--coral);"></span>
+      <span style="width:16%; background:var(--sky);"></span>
+      <span style="width:24%; background:var(--gold);"></span>
+      <span style="width:18%; background:var(--teal);"></span>
+      <span style="width:22%; background:var(--plum);"></span>
+    </div>
+    <div class="foot-grid">
+      <p class="copy">&copy; <span id="year"></span> Pragati Kore &middot; Houston, TX</p>
+      <ul class="foot-links">
+        <li><a href="cv.pdf" download>CV</a></li>
+        <li><a href="mailto:pragati.kore@bcm.edu">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=nDwn6ZsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/pragati-kore/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/pragatikore" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>

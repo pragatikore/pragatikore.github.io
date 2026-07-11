@@ -1,113 +1,102 @@
-<!-- about.html (About Page) -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pragati Kore</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Merriweather+Sans:wght@400&display=swap">
-    <style>
-        /* Updated CSS styles for the About page */
-        body {
-            font-family: 'Rubik', sans-serif; /* Set the font to Rubik */
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8; /* Grey background color */
-        }
-
-        header {
-            background-color: #f8f8f8; /* Use the same background color as the index page */
-            color: #333;
-            text-align: center;
-            padding: 1em;
-        }
-
-        nav {
-            background-color: white; /* Set the background to white */
-            text-align: center;
-            margin: 0;
-            padding: 1em;
-        }
-
-        nav a {
-            color: #888; /* Light grey font color */
-            text-decoration: none;
-            font-family: 'Rubik', sans-serif; /* Set the font to Rubik */
-            font-size: 1.2em; /* Set the font size */
-            margin: 0 2.25em; /* Adjust margin between tabs (1.5 times the original) */
-            transition: color 0.3s; /* Add transition for smooth color change */
-            text-transform: lowercase; /* Convert to lowercase */
-        }
-
-        nav a:hover {
-            color: black; /* Change font color to black on hover */
-        }
-
-        .name-links a {
-            color: black; /* Black font color for name */
-            text-decoration: none;
-            font-family: 'Merriweather Sans', sans-serif; /* Set the font to Merriweather Sans */
-            font-size: 38px; /* Set the font size to 38 pixels */
-        }
-
-        main {
-            display: flex;
-            height: 100vh;
-        }
-
-        .about-content {
-            width: 50%;
-            padding: 2em;
-            text-align: left;
-            background-color: #f8f8f8; /* Set the background to grey */
-            margin: 0.5in; /* Add margin of 0.5 inch on all sides */
-        }
-
-        .about-image {
-            width: 50%;
-            text-align: center;
-            margin: 0.5in; /* Add margin of 0.5 inch on all sides */
-        }
-
-        .about-image img {
-            max-width: 100%; /* Ensure the image does not exceed its container width */
-            height: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About &middot; Pragati Kore</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23FBF6EE'/><rect x='8' y='20' width='48' height='8' rx='4' fill='%23C9C9C4'/><rect x='8' y='32' width='34' height='8' rx='4' fill='%230E7C7B'/><rect x='8' y='44' width='24' height='8' rx='4' fill='%23DDDDD8'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1 style="font-family: 'Rubik', sans-serif; font-size: 38px;">Pragati Kore</h1>
-    </header>
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">Pragati Kore <span class="tag">Genetics &amp; Genomics</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="outreach.html">Outreach</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="research.html">Research</a>
-        <a href="outreach.html">Outreach</a>
-        <a href="food.html">Food</a>
-        <a href="travel.html">Travel</a>
-    </nav>
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <h1>A little bit of context.</h1>
+    <p class="lede">I&rsquo;m a Ph.D. candidate in statistical genetics with a passion for building computational methods that make genomics more equitable. Here&rsquo;s a little about what I&rsquo;m working on, how I got here, and what I enjoy outside the lab.</p>
+  </div>
+</header>
 
-    <main>
-        <div class="about-content">
-            <h2>Welcome!</h2>
-            <p>My name's Pragati Kore, and my pronouns are she/her/hers. I'm a Genetics & Genomics Ph.D. Student in the Atkinson Lab at Baylor College of Medicine in Houston, TX.</p>
+<section>
+  <div class="wrap">
+    <div class="grid" style="grid-template-columns: 1.3fr 1fr; gap:40px; align-items:start;">
+      <div>
+        <h2>Currently</h2>
+        <p>I&rsquo;m a Ph.D. candidate in the Genetics &amp; Genomics program at Baylor College of Medicine, in the Bioinformatics, Genomics and Systems Biology track, working with Dr.&nbsp;Elizabeth Atkinson. My dissertation is about advancing genomic equity through local ancestry inference &mdash; figuring out, block by block along a chromosome, which ancestral population a given segment of DNA most likely came from, and using that to make resources like gnomAD more accurate for people with admixed ancestry.</p>
+        <p>I also completed a Clinical Translational Research Certificate of Added Qualifications (Sept 2025) alongside the Ph.D., which is where a side project on polygenic risk scores for atrial fibrillation in Wolff-Parkinson-White syndrome came from.</p>
 
+        <h2 style="margin-top:1.4em;">Before Baylor</h2>
+        <p>I worked as an Associate Researcher in the Sebra Lab, Department of Genetics and Genomic Sciences, at the Icahn School of Medicine at Mount Sinai, and earned my B.S. in Biochemistry from the University of Texas at Austin, where I also picked up a certificate in Elements of Computing.</p>
+
+        <h2 style="margin-top:1.4em;">Off the clock</h2>
+        <p>I&rsquo;m a coffee enthusiast (my latte art is definitely improving!), a foodie who loves exploring new caf&eacute;s and restaurants, and I spend a lot of my free time trying new recipes, planning my next trip, or playing pickleball.</p>
+      </div>
+
+      <aside>
+        <figure class="profile-photo">
+          <img src="profile.jpg" alt="Pragati Kore smiling, holding an ice cream cone in a stepped alley beside a &lsquo;Smile, you are in the happy street&rsquo; sign">
+        </figure>
+        <div class="card">
+          <span class="label">Fast facts</span>
+          <ul class="plain" style="display:flex; flex-direction:column; gap:12px; margin:0; padding:0;">
+            <li><strong>Based in</strong><br>Houston, TX</li>
+            <li><strong>Program</strong><br>Genetics &amp; Genomics (BiGSB track), Baylor College of Medicine</li>
+            <li><strong>Advisor</strong><br>Dr. Elizabeth Atkinson</li>
+            <li><strong>Completed</strong><br>CTR Certificate of Added Qualifications (Sept 2025)</li>
+            <li><strong>Education</strong><br>B.S. Biochemistry, UT Austin</li>
+            <li><strong>Focus</strong><br>Rare variants &middot; admixed populations &middot; local ancestry inference</li>
+          </ul>
         </div>
-
-        <div class="about-image">
-            <img src="https://raw.githubusercontent.com/pragatikore/pragatikore.github.io/main/ppic.jpg" alt="Pragati Kore's Photo">
+        <div class="tag-row">
+          <span>Population genetics</span>
+          <span>Health equity</span>
+          <span>gnomAD</span>
         </div>
-    </main>
+      </aside>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <!-- Removed the copyright notice -->
-    </footer>
+<footer>
+  <div class="wrap">
+    <div class="divider-band ancestry-track" aria-hidden="true">
+      <span style="width:22%; background:var(--sky);"></span>
+      <span style="width:18%; background:var(--gold);"></span>
+      <span style="width:20%; background:var(--coral);"></span>
+      <span style="width:24%; background:var(--plum);"></span>
+      <span style="width:16%; background:var(--teal);"></span>
+    </div>
+    <div class="foot-grid">
+      <p class="copy">&copy; <span id="year"></span> Pragati Kore &middot; Houston, TX</p>
+      <ul class="foot-links">
+        <li><a href="cv.pdf" download>CV</a></li>
+        <li><a href="mailto:pragati.kore@bcm.edu">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=nDwn6ZsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://www.linkedin.com/in/pragati-kore/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/pragatikore" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>
